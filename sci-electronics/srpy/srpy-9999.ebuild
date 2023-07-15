@@ -6,6 +6,8 @@ EAPI="8"
 inherit cmake
 inherit git-r3
 
+PYTHON_COMPAT=( python3_{10..11} )
+
 DESCRIPTION="Sigrok pybind11 bindings"
 HOMEPAGE="https://github.com/drdbrr/srpy.git"
 EGIT_REPO_URI="https://github.com/drdbrr/${PN}.git"
