@@ -7,7 +7,7 @@ inherit cmake
 inherit git-r3
 
 PYTHON_COMPAT=( python3_{10..11} )
-inherit python-any-r1
+inherit python-utils-r1
 
 DESCRIPTION="Sigrok pybind11 bindings"
 HOMEPAGE="https://github.com/drdbrr/srpy.git"
