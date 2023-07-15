@@ -5,19 +5,18 @@ EAPI="8"
 
 inherit cmake
 
-EGIT_REPO_URI="git://sigrok.org/${PN}"
+#EGIT_REPO_URI="git://sigrok.org/${PN}"
+SRC_URI="https://sigrok.org/download/source/${PN}/${P}.tar.gz"
 inherit git-r3
 KEYWORDS="~amd64 ~x86 ~arm64 ~arm"
 
-#SRC_URI="https://sigrok.org/download/source/${PN}/${P}.tar.gz"
+
 
 
 DESCRIPTION="Sigrok pybind11 bindings"
-#HOMEPAGE="https://sigrok.org"
 
 LICENSE="GPL-3"
 SLOT="0"
-#IUSE="+decode static"
 
 BDEPEND="
     virtual/pkgconfig
@@ -36,7 +35,6 @@ DOCS=( README )
 
 src_prepare() {
     cmake_src_prepare
-    #cmake_comment_add_subdirectory manual
 }
 
 src_configure() {
