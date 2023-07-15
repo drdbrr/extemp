@@ -9,15 +9,7 @@ Usage
 Add this gentoo repository to system:
 * Remote URL:
 ```bash
-eselect repository add extemp git https://github.com/drdbrr/extemp.git
-```
-* Or add to local config:
-```bash
-echo """[extemp]
-location = /var/db/repos/extemp
-sync-type = git
-sync-uri = https://github.com/drdbrr/extemp.git
-""" >> /etc/portage/repos.conf/extemp.conf
+eselect repository add extemp git https://github.com/drdbrr/extemp.git && emaint sync -r extemp
 ```
 
 License
