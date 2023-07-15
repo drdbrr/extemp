@@ -8,11 +8,11 @@ Usage
 
 Add this gentoo repository to system:
 * Remote URL:
-```console
-root #eselect repository add extemp git https://github.com/drdbrr/extemp.git
+```bash
+eselect repository add extemp git https://github.com/drdbrr/extemp.git
 ```
 * Or add to local config:
-```console
+```bash
 echo """[extemp]
 location = /var/db/repos/extemp
 sync-type = git

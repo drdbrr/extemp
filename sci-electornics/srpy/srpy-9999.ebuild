@@ -4,19 +4,16 @@
 EAPI="8"
 
 inherit cmake
-
-#EGIT_REPO_URI="git://sigrok.org/${PN}"
-SRC_URI="https://sigrok.org/download/source/${PN}/${P}.tar.gz"
 inherit git-r3
-KEYWORDS="~amd64 ~x86 ~arm64 ~arm"
-
-
-
 
 DESCRIPTION="Sigrok pybind11 bindings"
+HOMEPAGE="https://github.com/drdbrr/srpy.git"
+EGIT_REPO_URI="https://github.com/drdbrr/${PN}.git"
 
 LICENSE="GPL-3"
 SLOT="0"
+KEYWORDS="~amd64 ~x86 ~arm64 ~arm"
+
 
 BDEPEND="
     virtual/pkgconfig
