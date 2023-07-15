@@ -39,6 +39,7 @@ src_prepare() {
 src_configure() {
     local mycmakeargs=(
         -DDISABLE_WERROR=TRUE
+        -DPYBIND11_PYTHON_VERSION=3.10
     )
     cmake_src_configure
 }
