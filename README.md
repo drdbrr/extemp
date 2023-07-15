@@ -8,16 +8,16 @@ Usage
 
 Add this gentoo repository to system:
 * Remote URL:
-```bash
-    root #eselect repository add extemp git https://github.com/drdbrr/extemp.git
+```console
+root #eselect repository add extemp git https://github.com/drdbrr/extemp.git
 ```
 * Or add to local config:
-```bash
-    [extemp]
-    location = /var/db/repos/extemp
-    sync-type = git
-    sync-uri = https://github.com/drdbrr/extemp.git
-    """ >> /etc/portage/repos.conf/extemp.conf"""
+```console
+echo """[extemp]
+location = /var/db/repos/extemp
+sync-type = git
+sync-uri = https://github.com/drdbrr/extemp.git
+""" >> /etc/portage/repos.conf/extemp.conf
 ```
 
 License
