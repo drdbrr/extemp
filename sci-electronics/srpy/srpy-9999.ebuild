@@ -6,7 +6,7 @@ EAPI="8"
 inherit cmake
 inherit git-r3
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit python-single-r1
 
 DESCRIPTION="Sigrok pybind11 bindings"
@@ -38,9 +38,11 @@ src_prepare() {
 }
 
 src_configure() {
+    local PYTHON_PATH=""
+    PYTHON_PATH="${PYTHON}"
     local mycmakeargs=(
         -DDISABLE_WERROR=TRUE
-        -DPYBIND11_PYTHON_VERSION=3.10
+        PYTHON_PATH="${PYTHON_PATH}"
     )
     cmake_src_configure
 }
