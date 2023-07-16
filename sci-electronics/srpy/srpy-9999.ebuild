@@ -39,10 +39,10 @@ src_prepare() {
 
 src_configure() {
     local PYTHON_PATH=""
-    PYTHON_PATH="${PYTHON}"
+    PYTHON_PATH=${EPYTHON}
     local mycmakeargs=(
         -DDISABLE_WERROR=TRUE
-        -DEPYTHON="EPYTHON"
+        -DPYTHON_PATH=${PYTHON_PATH}
     )
     cmake_src_configure
 }
