@@ -39,12 +39,12 @@ src_prepare() {
 }
 
 src_configure() {
-    local PYTHON_PATH=""
+    #local PYTHON_PATH=""
     #PYTHON_PATH=${EPYTHON}
-    PYTHON_PATH=$(python_get_sitedir)
+    #PYTHON_PATH=$(python_get_sitedir)
     local mycmakeargs=(
         -DDISABLE_WERROR=TRUE
-        -DPYTHON_PATH=${PYTHON_PATH}
+        -DPYTHON_SITE=$(python_get_sitedir)
     )
     cmake_src_configure
 }
