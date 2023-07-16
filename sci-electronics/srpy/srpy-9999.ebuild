@@ -42,7 +42,7 @@ src_configure() {
     PYTHON_PATH="${PYTHON}"
     local mycmakeargs=(
         -DDISABLE_WERROR=TRUE
-        PYTHON_PATH="${PYTHON_PATH}"
+        -DPYTHON_PATH="${PYTHON_PATH}"
     )
     cmake_src_configure
 }
