@@ -32,7 +32,7 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 
-DOCS=( README )
+DOCS=( README.md )
 
 src_prepare() {
     cmake_src_prepare
