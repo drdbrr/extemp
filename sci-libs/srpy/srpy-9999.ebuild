@@ -39,9 +39,9 @@ src_prepare() {
 }
 
 src_configure() {
-    local mycmakeargs=(
-        -DDISABLE_WERROR=TRUE
-        -DPYTHON_SITE=$(python_get_sitedir)
-    )
+#     local mycmakeargs=(
+#         -DDISABLE_WERROR=TRUE
+#         -DPYTHON_SITE=$(python_get_sitedir)
+#     )
     cmake_src_configure
 }
