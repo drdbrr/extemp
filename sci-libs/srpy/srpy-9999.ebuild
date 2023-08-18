@@ -40,7 +40,7 @@ src_prepare() {
 
 src_configure() {
      local mycmakeargs=(
-         -DPython_EXECUTABLE=$(PYTHON)
+         -DPython_EXECUTABLE=$(python)
      )
     cmake_src_configure
 }
