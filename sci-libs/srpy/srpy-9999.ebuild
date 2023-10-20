@@ -25,9 +25,10 @@ BDEPEND="
 RDEPEND="
     dev-libs/glib
     dev-cpp/glibmm
-    dev-libs/boost
     sci-libs/libsigrok:=[cxx]
     sci-libs/libsigrokdecode
+    dev-python/pybind11
+    app-arch/zstd
 "
 
 DEPEND="${RDEPEND}"
